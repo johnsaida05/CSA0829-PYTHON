@@ -1,0 +1,7 @@
+s = "Saveetha School of Engineering".lower()
+vowels = "aeiou"
+v = sum(1 for c in s if c in vowels)
+c = sum(1 for c in s if c.isalpha() and c not in vowels)
+print("Vowels:", v)
+print("Consonants:", c)
+print("Maximum:", "Vowels" if v > c else "Consonants")

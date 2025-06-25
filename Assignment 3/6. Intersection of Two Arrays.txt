@@ -1,0 +1,3 @@
+a = [1, 2, 2, 1]
+b = [2, 2]
+print("Intersection:", list(set(a) & set(b)))  # Output: [2]

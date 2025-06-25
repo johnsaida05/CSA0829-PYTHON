@@ -1,0 +1,6 @@
+m = 13
+n = 4
+x = m % n
+print("Peter gets", x, "vehicles.")
+if x % 2 == 0:
+    print("Peter is luckier.")
