@@ -1,0 +1,9 @@
+import math
+
+def is_perfect_square(n):
+    root = int(math.isqrt(n))
+    return root * root == n
+
+# Example:
+print(is_perfect_square(16))  # True
+print(is_perfect_square(20))  # False

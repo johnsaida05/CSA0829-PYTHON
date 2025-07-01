@@ -1,0 +1,13 @@
+def peter_vehicles(m, n):
+    max_each = m // n
+    distributed = max_each * n
+    remaining = m - distributed
+    luckier = (remaining % 2 == 0)
+    print(f"Peter gets {remaining} vehicles.")
+    if luckier:
+        print("Peter is luckier (remaining vehicles count is even).")
+    else:
+        print("Peter is not luckier.")
+
+# Example:
+peter_vehicles(17, 3)

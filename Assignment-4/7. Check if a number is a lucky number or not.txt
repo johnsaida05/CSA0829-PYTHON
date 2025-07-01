@@ -1,0 +1,14 @@
+def is_lucky_number(n, limit=100):
+    arr = list(range(1, limit*10, 2))  # start with odd numbers
+    idx = 1
+    while idx < len(arr) and arr[idx] <= len(arr):
+        step = arr[idx]
+        if step > len(arr):
+            break
+        arr = [arr[i] for i in range(len(arr)) if (i+1) % step != 0]
+        idx += 1
+    return n in arr
+
+# Example:
+print(is_lucky_number(7))   # True or False depending on sieve
+print(is_lucky_number(19))  # True or False

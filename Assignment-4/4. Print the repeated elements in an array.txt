@@ -1,0 +1,6 @@
+def print_repeated(arr):
+    repeated = set(x for x in arr if arr.count(x) > 1)
+    print("Repeated elements:", repeated if repeated else "None")
+
+# Example:
+print_repeated([1,2,3,2,4,5,1,6,3])
